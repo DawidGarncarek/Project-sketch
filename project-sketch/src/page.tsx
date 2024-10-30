@@ -1,7 +1,9 @@
 import React from 'react';
+
+import Link from 'next/link'
 import { Star, ShoppingCart, User, Clock, Cpu} from 'lucide-react'
-// import { Button } from "@/components/ui/button"
-// import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 const products = [
   { id: 1, name: 'High-Performance GPU', price: 599.99, category: 'Components', image: '/placeholder.svg?height=200&width=200' },
