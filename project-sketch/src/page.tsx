@@ -2,8 +2,8 @@ import React from 'react';
 
 import Link from 'next/link'
 import { Star, ShoppingCart, User, Clock, Cpu} from 'lucide-react'
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from './components/ui/button'
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './components/ui/card'
 
 const products = [
   { id: 1, name: 'High-Performance GPU', price: 599.99, category: 'Components', image: '/placeholder.svg?height=200&width=200' },
@@ -41,7 +41,7 @@ const Page: React.FC = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold mb-4">Welcome to TechZone</h2>
             <p className="text-xl mb-8 text-[#7B7A7B]">Your one-stop shop for all your computer needs</p>
-            {/* <Button size="lg" className="bg-[#2497F2] hover:bg-[#4352FF] text-white">Start Shopping</Button> */}
+            <Button size="lg" className="bg-[#2497F2] hover:bg-[#4352FF] text-white">Start Shopping</Button>
           </div>
         </section>
 
@@ -49,7 +49,7 @@ const Page: React.FC = () => {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center">Featured Products</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* {products.map((product) => (
+              {products.map((product) => (
                 <Card key={product.id} className="bg-[#000101] text-white">
                   <CardHeader>
                     <CardTitle>{product.name}</CardTitle>
@@ -63,7 +63,7 @@ const Page: React.FC = () => {
                     <Button className="w-full bg-[#2497F2] hover:bg-[#4352FF] text-white">Add to Cart</Button>
                   </CardFooter>
                 </Card>
-              ))} */}
+              ))}
             </div>
           </div>
         </section>
@@ -72,7 +72,7 @@ const Page: React.FC = () => {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center">Why Choose TechZone?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* {features.map((feature, index) => (
+              {features.map((feature, index) => (
                 <Card key={index} className="bg-[#18181D] text-white">
                   <CardHeader>
                     <feature.icon className="w-10 h-10 mb-2 text-[#2497F2]" />
@@ -82,7 +82,7 @@ const Page: React.FC = () => {
                     <p className="text-[#7B7A7B]">{feature.description}</p>
                   </CardContent>
                 </Card>
-              ))} */}
+              ))}
             </div>
           </div>
         </section>
@@ -91,7 +91,7 @@ const Page: React.FC = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
             <p className="text-xl mb-8 text-[#7B7A7B]">Create an account today and start building your dream setup!</p>
-            {/* <Button size="lg" className="bg-[#4352FF] hover:bg-[#2497F2] text-white">Create Account</Button> */}
+            <Button size="lg" className="bg-[#4352FF] hover:bg-[#2497F2] text-white">Create Account</Button>
           </div>
         </section>
       </main>
