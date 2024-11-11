@@ -1,14 +1,16 @@
-import React from 'react';
+import React from 'react'
 
-import Link from 'next/link'
 import { Star, ShoppingCart, User, Clock, Cpu} from 'lucide-react'
 import { Button } from './components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './components/ui/card'
+import Navigation from './components/Navigation'
+import CustomerService from './components/CustomerService'
+import QuickLinks from './components/QuickLinks'
 
 const products = [
-  { id: 1, name: 'High-Performance GPU', price: 599.99, category: 'Components', image: '/placeholder.svg?height=200&width=200' },
-  { id: 2, name: 'Mechanical Keyboard', price: 129.99, category: 'Accessories', image: '/placeholder.svg?height=200&width=200' },
-  { id: 3, name: 'Gaming PC Bundle', price: 1499.99, category: 'Ready-made Sets', image: '/placeholder.svg?height=200&width=200' },
+  { id: 1, name: 'High-Performance GPU', price: 599.99, category: 'Components', image: '/images/images.jpg ' },
+  { id: 2, name: 'Mechanical Keyboard', price: 129.99, category: 'Accessories', image: '/images/Mechanical-Keyboard-Guide-Gear-GettyImages-1313504623.webp' },
+  { id: 3, name: 'Gaming PC Bundle', price: 1499.99, category: 'Ready-made Sets', image: '/images/bundles-visual.jpg ' },
 ]
 
 const features = [
@@ -25,14 +27,7 @@ const Page: React.FC = () => {
       <header className="bg-[#4352FF] text-white py-4">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold">TechZone</h1>
-          <nav>
-            <ul className="flex space-x-4">
-              {/* <li><Link href="#" className="hover:text-[#2497F2]">Components</Link></li>
-              <li><Link href="#" className="hover:text-[#2497F2]">Accessories</Link></li>
-              <li><Link href="#" className="hover:text-[#2497F2]">Ready-made Sets</Link></li>
-              <li><Link href="#" className="hover:text-[#2497F2]">Custom PC Builder</Link></li> */}
-            </ul>
-          </nav>
+          {/* <Navigation /> */}
         </div>
       </header>
 
@@ -91,7 +86,7 @@ const Page: React.FC = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
             <p className="text-xl mb-8 text-[#7B7A7B]">Create an account today and start building your dream setup!</p>
-            <Button size="lg" className="bg-[#4352FF] hover:bg-[#2497F2] text-white">Create Account</Button>
+            <Button size="lg" className="bg-[#2497F2] hover:bg-[#4352FF] text-white">Create Account</Button>
           </div>
         </section>
       </main>
@@ -99,22 +94,8 @@ const Page: React.FC = () => {
       <footer className="bg-[#000101] text-white py-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                {/* <li><Link href="#" className="text-[#7B7A7B] hover:text-[#2497F2]">About Us</Link></li>
-                <li><Link href="#" className="text-[#7B7A7B] hover:text-[#2497F2]">Contact</Link></li>
-                <li><Link href="#" className="text-[#7B7A7B] hover:text-[#2497F2]">FAQs</Link></li> */}
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Customer Service</h3>
-              <ul className="space-y-2">
-                {/* <li><Link href="#" className="text-[#7B7A7B] hover:text-[#2497F2]">Shipping Information</Link></li>
-                <li><Link href="#" className="text-[#7B7A7B] hover:text-[#2497F2]">Returns & Exchanges</Link></li>
-                <li><Link href="#" className="text-[#7B7A7B] hover:text-[#2497F2]">Terms & Conditions</Link></li> */}
-              </ul>
-            </div>
+          {/* <QuickLinks />
+          <CustomerService /> */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
               <p className="text-[#7B7A7B]">Follow us on social media for the latest updates and tech news!</p>
