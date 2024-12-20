@@ -1,11 +1,11 @@
 import React from 'react'
 
 import { Star, ShoppingCart, User, Clock, Cpu} from 'lucide-react'
-import { Button } from './components/ui/button'
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './components/ui/card'
-import Navigation from './components/Navigation'
-import CustomerService from './components/CustomerService'
-import QuickLinks from './components/QuickLinks'
+import { Button } from '../components/ui/button'
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '../components/ui/card'
+import Navigation from '../components/Navigation'
+import CustomerService from '../components/CustomerService'
+import QuickLinks from '../components/QuickLinks'
 
 const products = [
   { id: 1, name: 'High-Performance GPU', price: 599.99, category: 'Components', image: '/images/images.jpg ' },
@@ -27,7 +27,7 @@ const Page: React.FC = () => {
       <header className="bg-[#4352FF] text-white py-4">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold">TechZone</h1>
-          {/* <Navigation /> */}
+          <Navigation />
         </div>
       </header>
 
@@ -94,8 +94,8 @@ const Page: React.FC = () => {
       <footer className="bg-[#000101] text-white py-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* <QuickLinks />
-          <CustomerService /> */}
+          <QuickLinks />
+          <CustomerService /> 
             <div>
               <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
               <p className="text-[#7B7A7B]">Follow us on social media for the latest updates and tech news!</p>
