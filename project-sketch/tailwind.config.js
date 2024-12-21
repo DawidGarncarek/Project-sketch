@@ -5,8 +5,8 @@ module.exports = {
   darkMode: ["class"],
   mode: 'jit', 
   content: [
-    './app/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    './src/app/**/*.{html,css,js,ts,jsx,tsx}',
+    './src/components/**/*.{html,css,js,ts,jsx,tsx}',
   ],
   theme: {
     container: {
